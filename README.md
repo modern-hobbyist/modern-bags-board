@@ -4,10 +4,18 @@
 Welcome to the Rotating Cornhole Board project! This project utilizes an Arduino Nano microcontroller along with TMC2209 stepper motor drivers, Nema 17 stepper motors, and a giant 3D printed lazy susan bearing to create a dynamically rotating cornhole board. With this setup, the hole on the cornhole board moves, adding an exciting twist to the classic game of cornhole.
 
 ## Features
-- Dynamic rotation of the cornhole board to change the position of the hole.
+- Battery-powered operation for portability and convenience.
+- Offers multiple operating modes:
+  - **Constant Speed Mode**: Maintains a consistent rotation speed.
+  - **Position Hold Mode**: Changes the position of the hole incrementally by pressing the up button.
+  - **Chaos Mode**: Randomizes speed, direction, and distance spun for added excitement.
 - Precise control using stepper motors for accurate positioning.
-- Customizable speed and direction of rotation.
-- Arduino-based control system for easy integration and modification.
+- Features an Arduino-based control system for easy integration and modification.
+- User-friendly interface with dedicated buttons:
+  - **Mode Button**: Switch between operating modes.
+  - **Speed Up Button**: Increase rotation speed.
+  - **Speed Down Button**: Decrease rotation speed.
+  - **Power Button**: Turn the system on/off.
 
 ## Components
 - Arduino Nano: The brain of the system, responsible for controlling the stepper motors and coordinating the rotation of the cornhole board.
