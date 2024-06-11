@@ -3,7 +3,7 @@
  * https://www.modhobbyist.com
  * 
  * This code is for the Rotating Cornhole board and it operates using a TMC2209 
- * stepper motor driver, a nema 23 stepper motor, and an arduino nano.
+ * stepper motor driver, a nema 17 stepper motor, and an arduino nano.
  *
  * There are three different game modes including an INIT state
  * 1. Constant Speed - A constant rotation that can be sped up/slowed down with +/- buttons
@@ -89,8 +89,8 @@ void setup() {
   driver.begin();                 //  SPI: Init CS pins and possible SW SPI pins
                                   // UART: Init SW UART (if selected) with default 115200 baudrate
   driver.toff(5);                 // Enables driver in software
-  driver.rms_current(2000);        // Set motor RMS current (adjusted for Nema 23, check your motor specs)
-  driver.microsteps(8);          // Set microsteps to 1/8th
+  driver.rms_current(1500);        // Set motor RMS current
+  driver.microsteps(4);          // Set microsteps to 1/4th
 
   driver.pwm_autoscale(true);     // Needed for stealthChop
 
